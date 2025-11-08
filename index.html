@@ -218,10 +218,36 @@ body {
 <script>
 /* ========== CONFIG / PONTOS ========== */
 const collectionPoints = [
-  { name: "Ponto de Coleta - Praça Central", address: "Praça Central, Bairro Centro, Vitória - ES", lat: -20.3175, lng: -40.3370 },
-  { name: "Escola Municipal João Silva", address: "R. das Flores, 123, Bairro Boa Vista", lat: -20.3188, lng: -40.3305 },
-  { name: "Supermercado Verde", address: "Av. Principal, 456", lat: -20.3202, lng: -40.3351 },
+  { 
+    name: "Sede Recicla Capixaba", 
+    address: "Rua Antônio Aleixo, 601, Centro, Vitória – ES", 
+    lat: -20.318195, 
+    lng: -40.337628,
+    source: "Prefeitura Vitória – PEV mapa" 
+  },
+  { 
+    name: "Ecoponto Maria Ortiz", 
+    address: "Av. Fernando Ferrari, s/n (aprox.), Maria Ortiz, Vitória – ES", 
+    lat: -20.280260, 
+    lng: -40.304420,
+    source: "Prefeitura Vitória – PEV mapa" 
+  },
+  { 
+    name: "Ecoponto Goiabeiras", 
+    address: "Av. Fernando Ferrari, 2800 (aprox.), Goiabeiras, Vitória – ES", 
+    lat: -20.270870, 
+    lng: -40.302590,
+    source: "Prefeitura Vitória – PEV mapa" 
+  },
+  { 
+    name: "Ecoponto Santo Antônio", 
+    address: "Rua Aracajú, 250 (aprox.), Santo Antônio, Vitória – ES", 
+    lat: -20.307200, 
+    lng: -40.342900,
+    source: "Prefeitura Vitória – PEV mapa" 
+  }
 ];
+
 
 const list = document.getElementById("collectionList");
 collectionPoints.forEach((p, idx) => {
